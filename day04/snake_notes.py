@@ -54,7 +54,7 @@ title_rect.center = (WINDOW_WIDTH // 2,
 # TODO: place the center of continue_rect  to an x coordinate of half the WINDOW_WIDTH and y coordinate of half the WINDOW_HEIGHT + 64
 
 # Set sounds and music
-pick_up_sound = pygame.mixer.Sound("pickup_sound.wav")
+pick_up_sound = pygame.mixer.Sound("pick_up_sound.wav")
 
 # Set images (in this case, use simple rects...so just create their coordinates)
 # For a rectangle you need (top-left x, top-left y, width, height)
@@ -88,10 +88,10 @@ while running:
             # TODO: check if the event.key is pygame.K_UP.
                 # Inside the block of the K_UP if statement.
                 # TODO: assign 0 'TO' snake_dx.  We may have been moving left or right.  This cancels that movement out.
-                # TODO: assign -1 * SNAKE_SIZE 'TO' snake_dx. This moves the snake 1 SNAKE_SIZE up.
+                # TODO: assign -1 * SNAKE_SIZE 'TO' snake_dy. This moves the snake 1 SNAKE_SIZE up.
             # TODO: check if the event.key is pygame.K_DOWN.
                 # Inside the block of the K_DOWN if statement.
-                # TODO: assign 0 'TO' snake_dx.  We may have been moving left or right.  This cancels that movement out.
+                # TODO: assign 0 'TO' snake_dy.  We may have been moving left or right.  This cancels that movement out.
                 # TODO: assign SNAKE_SIZE 'TO' snake_dx. This moves the snake 1 SNAKE_SIZE down.
 
 
